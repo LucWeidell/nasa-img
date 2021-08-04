@@ -29,7 +29,7 @@ class NasaImgsService{
         }
         extension = `'&start_date=${year}-${month}-1&end_date=${year}-${month}-${foundMonth.daysIn}}`
       }
-      const res = await nasaApi(extension)
+      const res = await nasaApi(''+ extension)
 
       // NOTE logging the res
       console.log(res.data)

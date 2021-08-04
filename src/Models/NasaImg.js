@@ -7,7 +7,7 @@ export default class NasaImg{
     this.data = data.date //this is the id
     this.title = data.title
     this.url = data.url
-    this.author = data.copyright
+    this.author = data.copyright || 'public domain'
     this.description = data.explanation
   }
 }
